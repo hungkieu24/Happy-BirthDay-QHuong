@@ -1,21 +1,5 @@
 
 
-function checkWidth() {
-    if (window.matchMedia("(max-width: 63.9375em)").matches) {
-        document.querySelectorAll('.container').forEach(function(element) {
-            element.classList.remove('container');
-        });
-    } else {
-        document.querySelectorAll('.letter').forEach(function(element) {
-            if (!element.classList.contains('container')) {
-                element.classList.add('container');
-            }
-        });
-    }
-}
-
-// Kiểm tra kích thước khi tải trang
-checkWidth();
 
 // Kiểm tra kích thước khi thay đổi kích thước cửa sổ
 window.addEventListener('resize', checkWidth);
